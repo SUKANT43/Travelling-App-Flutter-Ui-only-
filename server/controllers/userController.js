@@ -11,15 +11,15 @@ const loginUser = asyncHandler(async (req, res) => {
 
   if (!user) {
 
-    // await User.create({
-    //     name: "Sukant",
-    //     title: "Admin",
-    //     role: "admin",
-    //     email:"sukant98657@gmail.com",
-    //     password:"sukant", 
-    //     isAdmin: true,
-    //     isActive: true,
-    //   }); => use this for create a admin account
+    await User.create({
+        name: "Sukant",
+        title: "Admin",
+        role: "admin",
+        email:"sukant@gmail.com",
+        password:"sukant", 
+        isAdmin: true,
+        isActive: true,
+      }); //=> use this for create a admin account
 
 
     return res
